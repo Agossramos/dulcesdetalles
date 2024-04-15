@@ -1,0 +1,100 @@
+.contenedor {  
+	background-color:rgb(146, 243, 235);
+	width:100%;
+	margin:auto;
+
+	/* Flexbox */
+	display:flex;
+	flex-flow:row wrap;
+}
+
+/*fondo pagina*/
+body {
+	background-color:rgb(198, 255, 250); 
+	text-align:center;
+}
+
+/*encabezado*/
+header {
+	background:rgb(96, 223, 255);  
+	width: 100%;
+	padding:10px;
+	
+	/* Flexbox, aca nos encargamos del elemento de navegacion */
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+
+
+	flex-direction:row; /* esto nos pone los elementos en linea que ya estan especificados */
+	flex-wrap:wrap;    /* esto lo que hace , si un elemento no cabe lo pone abajo del otro */
+}
+
+
+header nav { /*estilo del navegador*/
+	width:60%;
+	/* Flexbox */
+
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+
+header nav a {
+	background:#14e6c3;
+	color:rgb(19, 17, 17);
+	text-align: center;
+	text-decoration:none;
+	padding:10px;
+
+	/* Flexbox , aca ajusta automaticamente los menus de navegacion todos del mismo tamaño a inicio,productos,quienes somos,etc*/
+	flex-grow:1;   
+}
+ 
+ /* esta linea es para que al pasar el mouse haga efecto de marcado en navegacion  */
+header nav a:hover {
+	background:rgb(198, 255, 250);
+}
+
+header nav-responsive{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    justify-content: space-between;
+    /*align-items: center;*/
+    /*background:rgb(128, 180, 248);*/
+    padding: 0.8rem 0rem;
+    margin-top: -5rem;
+}
+
+.access a{
+    color: rgb(20, 20, 17);
+    font-size: 20px;
+    padding:0 10px;
+}
+
+/* Fondo login*/
+
+.gradient-custom {
+	/* fallback for old browsers */
+	background: rgb(157, 233, 243);
+	
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(to right, rgb(157, 233, 243), rgb(27, 240, 255));
+	
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, rgb(157, 233, 243), rgb(240, 246, 247))
+}
+
+/* pie de pagina*/
+footer .social {
+	background:rgb(96, 223, 255);
+}
+
+footer .social a {
+	color:#fff;
+	text-decoration: none;
+	padding:10px;
+	display: inline-block;
+}

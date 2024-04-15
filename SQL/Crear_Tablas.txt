@@ -1,0 +1,34 @@
+CREATE DATABASE IF NOT EXISTS `bddulcesdetalles`;
+USE `bddulcesdetalles`;
+
+CREATE TABLE `productos` (
+  `Codigo_producto` int AUTO_INCREMENT PRIMARY KEY,
+  `Nombre_producto` varchar(50) NOT NULL,
+  `Precio` varchar(20) NOT NULL,
+  `Descripción_producto` varchar(100) NOT NULL,
+  `Foto` varchar(60) NOT NULL
+);
+
+
+CREATE TABLE `usuarios` (
+  `ID_Usuario` int AUTO_INCREMENT PRIMARY KEY,
+  `Nombre` varchar(30) NOT NULL,
+  `Apellido` varchar(30) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `Contraseña` varchar(50) NOT NULL,
+  `Tipo` varchar(15) NOT NULL
+);
+
+
+CREATE TABLE `pedidos` (
+  `Nro_Pedido` int AUTO_INCREMENT PRIMARY KEY,
+  `Fecha_Pedido` date NOT NULL,
+  `Fecha_Entrega` date NOT NULL,
+  `ID_Usuario` int NOT NULL,
+  `Codigo_Producto` int NOT NULL, 
+  FOREIGN KEY (ID_Usuario) REFERENCES usuarios(ID_Usuario) ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY (Codigo_Producto) REFERENCES productos(Codigo_Producto) ON UPDATE CASCADE
+) ;
+
+
+

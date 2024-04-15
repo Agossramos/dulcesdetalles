@@ -1,0 +1,19 @@
+﻿USE `bddulcesdetalles`;
+
+INSERT INTO `productos` (`Nombre_producto`, `Precio`, `Descripción_producto`, `Foto`) VALUES
+('Chocofrase 8 unidades', '120', 'Chocofrase 8 unidades sin relleno', 'Imagenes/Productos/chocofrase 8 uni.jpeg'),
+('Chocofrase 18 unidades', '380',  'Chocofrase 18 unidades sin relleno', 'Imagenes/Productos/chocofrase 18 uni.jpg'),
+('Chocofrase 21 unidades', '420', 'Chocofrase 21 unidades sin relleno','Imagenes/Productos/chocofrase 21 uni.jpg'),
+('Chocofrase 40 unidades', '520', 'Chocofrase 40 unidades sin relleno', 'Imagenes/Productos/chocofrase 40 uni.jpg'),
+('Chocofrase 45 unidades', '580', 'Chocofrase 45 unidades sin relleno', 'Imagenes/Productos/chocofrase 45 uni.jpg'),
+('Chocofrases 60 unidades', '620','Chocofrase 60 nidades sin relleno', 'Imagenes/Productos/chocofrase 60 uni.jpg'),
+('20 Bombones rellenos', '580', '20 Bombones rellenos de dulce de leche', 'Imagenes/Productos/bombones rellenos.jpg'),
+('Flor', '100', 'Flor rellena de dulce de leche','Imagenes/Productos/flor.jpg'),
+('Ramo de flores 1/2 docena', '500', 'Ramo de flores rellenas de dulce de leche por 1/2 docena','Imagenes/Productos/flores x6.jpg'),
+('Ramo de flores docena', '850', 'Ramo de flores rellenas de dulce de leche por docena', 'Imagenes/Productos/flores x6.jpg');
+
+INSERT INTO `usuarios` (`Nombre`, `Apellido`, `Email`, `Contraseña`, `Tipo`) VALUES
+('agos', 'ramos', 'agos@hotmail.com', '123456', 'admin'),
+('lucas', 'lucas', 'lucas@hotmail.com', '123456', 'cliente');
+
+
